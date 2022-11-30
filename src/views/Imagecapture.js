@@ -51,7 +51,7 @@ const Imagecapture = () => {
         <Col md='4'>
           <Card style={{height:"300px", border:"2px solid orange"}}>
             <div style={{marginLeft:"15px"}}>
-            <div>Capture Image:</div>
+            <div>Capture Selfie:</div>
             <ImageCapture
               onCapture={onCapture}
               onError={onError}
@@ -66,7 +66,7 @@ const Imagecapture = () => {
           <Card style={{height:"300px", border:"2px solid orange"}}>
             {imgSrc &&
               <div style={{marginLeft:"15px"}}>
-                <div>Captured Image:</div>
+                <div>Captured Selfie:</div>
                 <img src={imgSrc} alt="captured-img" />
               </div>
             }

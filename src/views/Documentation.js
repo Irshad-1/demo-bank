@@ -51,7 +51,7 @@ const Documentation = () => {
                                         className="btn-fill "
                                         variant="info"
                                         style={{ width: "640px", backgroundColor: "skyBlue", border: "skyBlue" }}
-                                        onClick={()=> history.push("/admin/imagecapture")}
+                                        onClick={()=> history.push("/admin/imagedocumentation")}
                                     >
 
 

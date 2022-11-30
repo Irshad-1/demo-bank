@@ -42,9 +42,27 @@ const imageCaptureDocumentation = () => {
               <div>                  
                 <ol>
                  <ul>
-                  <li><p>Easy and fast account opening</p></li>
-                  <li><p>No initial deposit require</p></li>
-                  <li><p>No maintaining balance</p></li>
+                  <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nam et dolor tempor, ornare felis sit amet, ultricies ligula.</p></li>
+ 
+<li><p>Ras feugiat mi at arcu consectetur, tincidunt facilisis neque 
+auctor. Cras et euismod quam. Fusce at lacus eget tellus 
+efficitur convallis. </p></li>
+
+<li><p>Nulla eget placerat lacus. Interdum et malesuada fames ac 
+ante ipsum primis in faucibus. </p></li>
+
+<li><p>Curabitur et placerat dolor. Nam sodales neque sed eros sodales lobortis.</p></li>
+
+<li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Nam et dolor tempor, ornare felis sit amet, ultricies ligula.</p></li>
+ 
+<li><p>Ras feugiat mi at arcu consectetur, tincidunt facilisis neque 
+auctor. Cras et euismod quam. Fusce at lacus eget tellus 
+efficitur convallis. </p></li>
+
+
+                 
                   </ul>  
                 </ol>
                
@@ -75,8 +93,9 @@ const imageCaptureDocumentation = () => {
                   onClick={() => {
                     history.push("/admin/imagecapture");
                   }}
+                  style={{marginLeft:"-20px"}}
                 >
-                &nbsp;   Apply Now &nbsp;  &nbsp; 
+                  Continue with Selfie Scan  
                 </Button>
           </Col> 
       </Row>

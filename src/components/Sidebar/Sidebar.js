@@ -51,7 +51,7 @@ function Sidebar({ color, image, routes }) {
         </div>
         <Nav>
           {routes.map((prop, key) => {
-            if (!prop.redirect && key < 10)
+            if (!prop.redirect && key < 15)
               return (
                 <li
                   className={

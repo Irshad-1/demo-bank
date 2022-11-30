@@ -42,6 +42,8 @@ import { WelcomeToABC } from "views/WelcomeToABC";
 import SetPassword from "views/SetPassword";
 import { Login } from "views/Login";
 import imageCaptureDocumentation from "views/imageCaptureDocumentation";
+import ScanYourID from "views/ScanYourID";
+import ScanAddress from "views/ScanAddress";
 
 const dashboardRoutes = [
   {
@@ -94,10 +96,25 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
+    path: "/scanyourid",
+    name: "Sacan Pan Card",
+    icon: "nc-icon nc-atom",
+    component: ScanYourID,
+    layout: "/admin"
+  },
+
+  {
     path: "/scanyouraddress",
     name: "Scanyour Address",
     icon: "nc-icon nc-circle-09",
     component: ScanYouaddress,
+    layout: "/admin"
+  },
+  {
+    path: "/scanaddress",
+    name: "Scan Address",
+    icon: "nc-icon nc-circle-09",
+    component: ScanAddress,
     layout: "/admin"
   },
   {

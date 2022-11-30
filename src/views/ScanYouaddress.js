@@ -106,7 +106,7 @@ const ScanYouaddress = () => {
                                 className="btn-fill "
                                 variant="info"
                                 style={{ width: "200px" }}
-                                onClick={getDetails}
+                                onClick={()=> history.push("/admin/scanaddress")}
                             >
                                 Upload Now
                             </Button>
