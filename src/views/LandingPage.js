@@ -53,6 +53,9 @@ const LandingPage = () => {
                     className="btn-fill pull-right"
                     type="submit"
                     variant="info"
+                    onClick={()=>{
+                      history.push("/admin/login")
+                    }}
                   >
                    Login
                   </Button>

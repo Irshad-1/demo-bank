@@ -45,6 +45,11 @@ import imageCaptureDocumentation from "views/imageCaptureDocumentation";
 import ScanYourID from "views/ScanYourID";
 import ScanAddress from "views/ScanAddress";
 
+import { LoanAvailment } from "views/LoanAvailment";
+import { LoanSummary } from "views/LoanSummary";
+import { Congratulation } from "views/Congratulation";
+import { Authentication } from "views/Authentication";
+import { ForgotPassword } from "views/ForgotPassword";
 const dashboardRoutes = [
   {
     path: "/landingPage",
@@ -205,6 +210,12 @@ const dashboardRoutes = [
     component: Upgrade,
     layout: "/admin"
   },
+  {path:"/loanAvailment",component:LoanAvailment,layout:"/admin"},
+  {path:"/loanSummary",component:LoanSummary,layout:"/admin"},
+  {path:"/forgotPassword",component:ForgotPassword,layout:"/admin"},
+  {path:"/authentication",component:Authentication,layout:"/admin"},
+  {path:"/congratulations",component:Congratulation,layout:"/admin"},
+  
 ];
 
 export default dashboardRoutes;

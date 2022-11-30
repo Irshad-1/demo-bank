@@ -11,8 +11,12 @@ import {
   Col,
   InputGroup,
 } from "react-bootstrap";
+import { useHistory } from "react-router-dom";
+
 
 export const Login = () => {
+  const history = useHistory();
+
   const [showPassword, setShowPassword] = React.useState(false);
 
   return (
@@ -34,7 +38,7 @@ export const Login = () => {
                     src={require("../assets/img/int.jpg")}
                   />
 
-                  <h1 className="title">Welcome to Demo Bank</h1>
+                  <h2 className="title">Welcome to Demo Bank</h2>
                 </a>
                 <h4 style={{ width: "80%", margin: "40px auto" }}>
                   Thank you for accepting the offer. Avail of you loan now. but
@@ -83,8 +87,12 @@ export const Login = () => {
                         display: "block",
                         color: "#577B63",
                         margin: "15px",
+                        cursor:"pointer"
                       }}
-                      href="/"
+                      
+                      onClick={() => {
+                        history.push("/admin/forgotPassword");
+                      }}
                     >
                       Forgot your password?
                     </a>
@@ -97,7 +105,7 @@ export const Login = () => {
                 className="btn-fill pull-right"
                 variant="success"
                 onClick={() => {
-                  history.push("/admin/setPassword");
+                  history.push("/admin/loanAvailment");
                 }}
               >
                 Agree & Continue

@@ -46,7 +46,7 @@ export const EmploymentFinancialDetails = () => {
                         <InputGroup.Text>&#8377;</InputGroup.Text>
                         <Form.Control
                           defaultValue="2,259.00"
-                          placeholder="Enter Mobile Number"
+                          placeholder="Enter Monthly Income"
                         />
                       </InputGroup>
                     </Form.Group>

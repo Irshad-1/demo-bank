@@ -36,7 +36,8 @@ const SetPassword = () => {
                         <label htmlFor="exampleInputEmail1">Password</label>
                         <Form.Control
                           placeholder="Enter Password"
-                          type="otp"
+                          defaultValue="abcd1234"
+                          type="password"
                         ></Form.Control>
                       </Form.Group>
                     </Col>
@@ -47,7 +48,8 @@ const SetPassword = () => {
                         </label>
                         <Form.Control
                           placeholder="Enter Confirm Password"
-                          type="otp"
+                          defaultValue="abcd1234"
+                          type="text"
                         ></Form.Control>
                       </Form.Group>
                       <p style={{ fontSize: "13px", color: "red" }}>
