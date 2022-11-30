@@ -51,6 +51,7 @@ const Documentation = () => {
                                         className="btn-fill "
                                         variant="info"
                                         style={{ width: "640px", backgroundColor: "skyBlue", border: "skyBlue" }}
+                                        onClick={()=> history.push("/admin/imagecapture")}
                                     >
 
 
@@ -65,6 +66,7 @@ const Documentation = () => {
                                         className="btn-fill "
                                         variant="info"
                                         style={{ width: "640px", backgroundColor: "yellowGreen", border: "yellowGreen" }}
+                                        onClick={()=> history.push("/admin/user")}
                                     >
 
                                         <h4>Fillout details</h4>

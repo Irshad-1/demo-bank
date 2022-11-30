@@ -41,16 +41,9 @@ import LoanAgreement from "views/LoanAgreement";
 import { WelcomeToABC } from "views/WelcomeToABC";
 import SetPassword from "views/SetPassword";
 import { Login } from "views/Login";
+import imageCaptureDocumentation from "views/imageCaptureDocumentation";
 
 const dashboardRoutes = [
-  // {
-  //   upgrade: true,
-  //   path: "/upgrade",
-  //   name: "Upgrade to PRO",
-  //   icon: "nc-icon nc-alien-33",
-  //   component: Upgrade,
-  //   layout: "/admin"
-  // },
   {
     path: "/landingPage",
     name: "Landing Page",
@@ -105,6 +98,13 @@ const dashboardRoutes = [
     name: "Scanyour Address",
     icon: "nc-icon nc-circle-09",
     component: ScanYouaddress,
+    layout: "/admin"
+  },
+  {
+    path: "/imagedocumentation",
+    name: "Image Document",
+    icon: "nc-icon nc-notes",
+    component: imageCaptureDocumentation,
     layout: "/admin"
   },
   {
@@ -180,6 +180,14 @@ const dashboardRoutes = [
   { path: "/welcome", component: WelcomeToABC, layout: "/admin" },
   { path: "/setPassword", component: SetPassword, layout: "/admin" },
   { path: "/login", component: Login, layout: "/admin" },
+    {
+    upgrade: true,
+    path: "/upgrade",
+    name: "Upgrade to PRO",
+    icon: "nc-icon nc-alien-33",
+    component: Upgrade,
+    layout: "/admin"
+  },
 ];
 
 export default dashboardRoutes;

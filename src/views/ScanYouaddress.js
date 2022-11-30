@@ -23,7 +23,7 @@ const ScanYouaddress = () => {
             confirmButtonText: "Confirm"
         })
             .then(() =>
-               history.push("/admin/imagecapture")
+               history.push("/admin/documentation")
             )
     }
   return (
@@ -34,7 +34,7 @@ const ScanYouaddress = () => {
             <Col md="8">
                 <Card>
                     <Card.Header>
-                        <Card.Title as="h4" style={{ fontWeight: "700" }} >Upload Your Pan card</Card.Title>
+                        <Card.Title as="h4" style={{ fontWeight: "700" }} >Choose Address Proof</Card.Title>
                         <p className='text-success'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br></br>
                             Nam et dolor tempor,ornare felis sit amet, ultricies ligula. </p>
                     </Card.Header>
