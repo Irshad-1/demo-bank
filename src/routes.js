@@ -60,7 +60,7 @@ const dashboardRoutes = [
   },
   {
     path: "/acountType",
-    name: "Acount Type",
+    name: "Account Type",
     icon: "nc-icon nc-chart-pie-35",
     component: AcountType,
     layout: "/admin"
@@ -95,14 +95,14 @@ const dashboardRoutes = [
   },
   {
     path: "/scanyouid",
-    name: "Sacan Your ID",
+    name: "Scan Your ID",
     icon: "nc-icon nc-atom",
     component: ScanYouId,
     layout: "/admin"
   },
   {
     path: "/scanyourid",
-    name: "Sacan Pan Card",
+    name: "Scan Pan Card",
     icon: "nc-icon nc-atom",
     component: ScanYourID,
     layout: "/admin"
@@ -110,7 +110,7 @@ const dashboardRoutes = [
 
   {
     path: "/scanyouraddress",
-    name: "Scanyour Address",
+    name: "Scan Your Address",
     icon: "nc-icon nc-circle-09",
     component: ScanYouaddress,
     layout: "/admin"
