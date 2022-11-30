@@ -32,6 +32,15 @@ import Documentation from "views/Documentation";
 import ScanYouId from "views/ScanYouId";
 import ScanYouaddress from "views/ScanYouaddress";
 import Imagecapture from "views/Imagecapture";
+import { UserDetails } from "views/UserDetails";
+import { EmploymentFinancialDetails } from "views/EmploymentFinancialDetails";
+import { Fatca } from "views/Fatca";
+import { RelativeOfABC } from "views/RelativeOfABC";
+import { LoanDetails } from "views/LoanDetails";
+import LoanAgreement from "views/LoanAgreement";
+import { WelcomeToABC } from "views/WelcomeToABC";
+import SetPassword from "views/SetPassword";
+import { Login } from "views/Login";
 
 const dashboardRoutes = [
   // {
@@ -106,6 +115,13 @@ const dashboardRoutes = [
     layout: "/admin"
   },
   {
+    path: "/user",
+    name: "User Profile",
+    icon: "nc-icon nc-circle-09",
+    component: UserDetails,
+    layout: "/admin",
+  },
+  {
     path: "/table",
     name: "Table List",
     icon: "nc-icon nc-notes",
@@ -139,7 +155,31 @@ const dashboardRoutes = [
     icon: "nc-icon nc-bell-55",
     component: Notifications,
     layout: "/admin"
-  }
+  },
+  {
+    path: "/employmentFinancialDetails",
+    component: EmploymentFinancialDetails,
+    layout: "/admin",
+  },
+  {
+    path: "/fatca",
+    component: Fatca,
+    layout: "/admin",
+  },
+  {
+    path: "/relativeOfAbc",
+    component: RelativeOfABC,
+    layout: "/admin",
+  },
+  {
+    path: "/loanDetails",
+    component: LoanDetails,
+    layout: "/admin",
+  },
+  { path: "/loanAgreement", component: LoanAgreement, layout: "/admin" },
+  { path: "/welcome", component: WelcomeToABC, layout: "/admin" },
+  { path: "/setPassword", component: SetPassword, layout: "/admin" },
+  { path: "/login", component: Login, layout: "/admin" },
 ];
 
 export default dashboardRoutes;
