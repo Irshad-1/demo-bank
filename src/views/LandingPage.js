@@ -22,7 +22,7 @@ const LandingPage = () => {
       
           <Col md="12">
             <Card className="card-user">
-              <div className="card-image">
+              <div className="card-image" style={{height:"80px"}}>
                
               </div>
               <Card.Body>

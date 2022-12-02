@@ -50,7 +50,7 @@ function Header() {
               <Nav.Link
                 className="m-0"
               >
-                 <Card.Title as="h3" style={{fontWeight:"900"}}>Demo Bank</Card.Title>
+                 <Card.Title as="h5" style={{fontWeight:"900"}}>Demo Bank</Card.Title>
                
               </Nav.Link>
             </Nav.Item>

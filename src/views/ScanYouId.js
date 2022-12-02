@@ -26,8 +26,8 @@ const ScanYouId = () => {
                         <Card>
                             <Card.Header>
                                 <Card.Title as="h4" style={{ fontWeight: "700" }} >Upload Your Pan card</Card.Title>
-                                <p className='text-success'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br></br>
-                                    Nam et dolor tempor,ornare felis sit amet, ultricies ligula. </p>
+                                <p className='text-success'>This Pan Card Identification needs for you ID verification<br></br>
+                                    Your Pan Card details will be safe</p>
                             </Card.Header>
                             <Card.Body>
                                 <Form>

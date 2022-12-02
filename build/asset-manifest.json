@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3c5fe88e.css",
-    "main.js": "/static/js/main.8a912b4d.js",
+    "main.js": "/static/js/main.cb802ab8.js",
     "static/media/fa-solid-900.svg": "/static/media/fa-solid-900.0454203f26b33fc02e2b.svg",
     "static/media/passport.png": "/static/media/passport.b3762eb951ff08ea0863.png",
     "static/media/fa-brands-400.svg": "/static/media/fa-brands-400.991c1c761fc31f9c3252.svg",
@@ -43,6 +43,6 @@
   },
   "entrypoints": [
     "static/css/main.3c5fe88e.css",
-    "static/js/main.8a912b4d.js"
+    "static/js/main.cb802ab8.js"
   ]
 }

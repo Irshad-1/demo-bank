@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { useHistory } from 'react-router';
 import {
   Badge,
@@ -13,7 +13,11 @@ import {
 } from "react-bootstrap";
 
 const TermsConditions = () => {
+  const [firstState, setFirstState] = useState(false);
+  const [secondState, setSecondState] = useState(false);
   const history = useHistory();
+  console.log(firstState,secondState)
+
   return (
     <>
       <Container fluid>
@@ -26,41 +30,34 @@ const TermsConditions = () => {
               <Card.Body>
                 <Form>
                   <ol>
-                    <li><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nam et dolor tempor, ornare felis sit amet, ultricies ligula.
-                      ras feugiat mi at arcu consectetur, tincidunt facilisis neque
-                      auctor. Cras et euismod quam. Fusce at lacus eget tellus
-                      efficitur convallis. </p></li>
+                    <li><p>A Loan Agreement, also known as a term loan, demand loan, or a loan contract, is a contract that documents a financial agreement between two parties, where one is the lender and the other is the borrower.</p></li>
                     <li>
                       <p>
-                        Nulla eget placerat lacus. Interdum et malesuada fames ac
-                        ante ipsum primis in faucibus. Curabitur et placerat dolor.
-                        Nam sodales neque sed eros sodales lobortis. Ut vehicula
-                        nulla nec lectus bibendum volutpat. Nam porta ultricies.
+                      This contract specifies the amount of the loan, any interest charges, the repayment plan, and payment dates.<br></br> 
+                      A written contract gives both the borrower and lender a clear outline of the terms of the loan.
                       </p></li>
                     <li>
                       <p>
-                        Donec nisi massa, efficitur et felis quis, aliquet luctus sapien.
-                        Praesent in ligula nec metus condimentum feugiat nec eu
-                        purus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                      If the borrower dies before paying off the loan, authorities will use their assets to pay the remainder of the debt.<br></br>
+                      If there is a co-signer, the responsibility for the debt falls to them.
                       </p></li><li>
                       <p>
-                        Sed vel purus sit amet ex tincidunt ornare. Cras dolor dui,
-                        egestas non arcu sed, elemen tum dignissim elit. Vivamus
-                        vel ex euismod, porta magna ma lesuada, dictum eros.
-                        Proin sed ligula ac eros pharetra ferme ntum id sapien.
+                      The borrower may secure the loan with collateral such as a vehicle, equipment, or jewellery.<br></br>
+                       In this case, the lender may seize the collateral if the borrower cannot repay the full loan amount.<br></br>
+                       The lender may also require the borrower to obtain insurance if using the loan to buy a vehicle.
                       </p></li>
                     <li>
                       <p>
-                        Maecenas ornare, dui et dictum fermentum, purus ex conseq
-                        uat elit, eget iaculis felis sem pharetra diam.</p></li>
+                      The borrower repays the entire loan amount at once (either by a specific date or upon notice to repay).</p></li>
                   </ol>
                   <br></br>
                   <Col md="12">
                     {/* <Col md="8">
                     </Col> */}
                     <Col md="12" >
-                      <span><Form.Check /></span>
+
+                      <span><input type="checkbox" value="firstState" onChange={()=> setFirstState((e) => !e)}/> </span>
+
                       <label>By checking this box, I agree to receive promotional &
                         marketing content from DEMO Bank</label>
                     </Col>
@@ -72,17 +69,13 @@ const TermsConditions = () => {
                   <br></br>
                   <ol>
                     <li>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam et dolor tempor, ornare felis sit amet, ultricies ligula.
-                        ras feugiat mi at arcu consectetur, tincidunt facilisis neque
-                        auctor. Cras et euismod quam. Fusce at lacus eget tellus
-                        efficitur convallis. </p></li>
+                      <p>This contract specifies the amount of the loan, any interest charges, the repayment plan, and payment dates.<br></br> 
+                      A written contract gives both the borrower and lender a clear outline of the terms of the loan.</p></li>
                     <li>
                       <p>
-                        Nulla eget placerat lacus. Interdum et malesuada fames ac
-                        ante ipsum primis in faucibus. Curabitur et placerat dolor.
-                        Nam sodales neque sed eros sodales lobortis. Ut vehicula
-                        nulla nec lectus bibendum volutpat. Nam porta ultricies.
+                      The borrower may secure the loan with collateral such as a vehicle, equipment, or jewellery.<br></br>
+                       In this case, the lender may seize the collateral if the borrower cannot repay the full loan amount.<br></br>
+                       The lender may also require the borrower to obtain insurance if using the loan to buy a vehicle.
                       </p>
                     </li>
 
@@ -92,7 +85,9 @@ const TermsConditions = () => {
                     {/* <Col md="8">
                     </Col> */}
                     <Col md="12" >
-                      <span><Form.Check /></span>
+
+                      <span><input type="checkbox" value="secondState" onChange={()=> setSecondState((e) => !e)}/>  </span> 
+                      
                       <label>By checking this box, I agree to receive promotional &
                         marketing content from DEMO Bank</label>
                     </Col>
@@ -107,6 +102,7 @@ const TermsConditions = () => {
                   // variant="info"
                   // style={{backgroundColor:"green", border:"green"}}
                   onClick={()=> history.push("/admin/documentation")}
+                  disabled={!firstState && !secondState}
                   >
                     Agree & Continue
                   </Button>
