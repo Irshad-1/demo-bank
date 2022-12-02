@@ -27,7 +27,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>First Name</label>
                       <Form.Control
-                        defaultValue="Ram"
                         placeholder="Enter First Name"
                         type="text"
                       ></Form.Control>
@@ -37,7 +36,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Middle Name</label>
                       <Form.Control
-                        defaultValue="Ratan"
                         placeholder="Enter Middle Name"
                         type="text"
                       ></Form.Control>
@@ -47,7 +45,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Last Name</label>
                       <Form.Control
-                        defaultValue="Mohta"
                         placeholder="Enter Last Name"
                         type="text"
                       ></Form.Control>
@@ -58,17 +55,13 @@ export const UserDetails = () => {
                   <Col className="pr-1" md="4">
                     <Form.Group>
                       <label>Date of Birth</label>
-                      <Form.Control
-                        defaultValue="1988-09-01"
-                        type="date"
-                      ></Form.Control>
+                      <Form.Control type="date"></Form.Control>
                     </Form.Group>
                   </Col>
                   <Col className="px-1" md="4">
                     <Form.Group>
                       <label>Place of Birth</label>
                       <Form.Control
-                        defaultValue="Kolkata"
                         placeholder="Enter Place of Birth"
                         type="text"
                       ></Form.Control>
@@ -78,7 +71,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Nationality</label>
                       <Form.Control
-                        defaultValue="Indian"
                         placeholder="Enter Nationality"
                         type="text"
                       ></Form.Control>
@@ -99,7 +91,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Income Proof Type</label>
                       <Form.Control
-                        defaultValue="PAN Card"
                         placeholder="Enter Income Proof Type"
                         type="text"
                       ></Form.Control>
@@ -109,7 +100,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Income Proof Number</label>
                       <Form.Control
-                        defaultValue="PXV1M123J"
                         placeholder="Enter Income Proof Number"
                         type="text"
                       ></Form.Control>
@@ -119,7 +109,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Address Proof Type</label>
                       <Form.Control
-                        defaultValue="Aadhaar Card"
                         placeholder="Enter Last Name"
                         type="text"
                       ></Form.Control>
@@ -131,7 +120,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Address Proof Number</label>
                       <Form.Control
-                        defaultValue="PXV1M123J"
                         placeholder="Enter Address Proof Number"
                         type="text"
                       ></Form.Control>
@@ -141,7 +129,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Gender</label>
                       <Form.Control
-                        defaultValue="Male"
                         placeholder="Enter Gender"
                         type="text"
                       ></Form.Control>
@@ -163,10 +150,7 @@ export const UserDetails = () => {
                       <label>Mobile Number</label>
                       <InputGroup className="mb-3">
                         <InputGroup.Text>+91</InputGroup.Text>
-                        <Form.Control
-                          defaultValue="9331982298"
-                          placeholder="Enter Mobile Number"
-                        />
+                        <Form.Control placeholder="Enter Mobile Number" />
                       </InputGroup>
                     </Form.Group>
                   </Col>
@@ -175,7 +159,6 @@ export const UserDetails = () => {
                       <label>Email ID</label>
                       <InputGroup className="mb-3">
                         <Form.Control
-                          defaultValue="demo@gmail.com"
                           placeholder="Enter Email ID"
                           type="text"
                         ></Form.Control>
@@ -202,7 +185,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Address Line 1</label>
                       <Form.Control
-                        defaultValue="100, C. R. Avenue"
                         placeholder="Enter Address Line 1"
                         type="text"
                       ></Form.Control>
@@ -212,7 +194,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Address Line 2</label>
                       <Form.Control
-                        defaultValue="100, C. R. Avenue"
                         placeholder="Enter Address Line 2"
                         type="text"
                       ></Form.Control>
@@ -222,7 +203,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Address Line 3</label>
                       <Form.Control
-                        defaultValue="100, C. R. Avenue"
                         placeholder="Enter Address Line 3"
                         type="text"
                       ></Form.Control>
@@ -234,7 +214,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>City</label>
                       <Form.Control
-                        defaultValue="Kolkata"
                         placeholder="Enter City"
                         type="text"
                       ></Form.Control>
@@ -244,7 +223,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Place</label>
                       <Form.Control
-                        defaultValue="West Bengal"
                         placeholder="Enter Gender"
                         type="text"
                       ></Form.Control>
@@ -254,7 +232,6 @@ export const UserDetails = () => {
                     <Form.Group>
                       <label>Zip Code</label>
                       <Form.Control
-                        defaultValue="700006"
                         placeholder="Enter Zip Code"
                         type="text"
                       ></Form.Control>

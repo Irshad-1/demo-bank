@@ -1,19 +1,19 @@
-import React from 'react';
+import React from "react";
 import {
-    Badge,
-    Button,
-    Card,
-    Form,
-    Navbar,
-    Nav,
-    Container,
-    Row,
-    Col
-  } from "react-bootstrap";
-  import { useHistory } from "react-router-dom";
+  Badge,
+  Button,
+  Card,
+  Form,
+  Navbar,
+  Nav,
+  Container,
+  Row,
+  Col,
+} from "react-bootstrap";
+import { useHistory } from "react-router-dom";
 
 export const Congratulation = () => {
-    const history = useHistory();
+  const history = useHistory();
   return (
     <Container fluid>
       <Row>
@@ -23,35 +23,37 @@ export const Congratulation = () => {
             <Card.Header>
               <Card.Title as="h4">Congratulations</Card.Title>
               <img
-                      alt="intimage"
-                  
-                      src={require("../assets/img/congratulations.jpg")}
-                    />
+                alt="intimage"
+                src={require("../assets/img/congratulations.jpg")}
+              />
             </Card.Header>
             <Card.Body>
-              
-            <Card.Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean quis ornare orci, nec rutrum elit. Cras porta consectetur dui. 
+              <Card.Text>
+                We are informing you that our bank has received your application
+                for Personal Loan . We are happy to inform you that your
+                Personal Loan request has been approved and is currently being
+                processed. Further, we inform you that we have sent an email
+                containing attached documents. Also we have sent you the terms
+                and conditions of the loans sanctioned. We would like to
+                schedule your meeting with the finance officer of the company
+                for any further information and clarifications that you might
+                wish to know.
+              </Card.Text>
 
-In sit amet velit vitae ex ultricies viverra quis a leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac ullamcorper justo. 
-
-Sed vel nulla at odio tempor ullamcorper at in nunc. Curabitur eget magna volutpat, ornare odio vitae, rutrum mi. 
-            </Card.Text>
-                
-                <Button
-                  className="btn-fill pull-right"
-                  variant="info"
-                  onClick={() => {
-                    history.push("/admin/landingPage");
-                  }}
-                >
-                  Go To Dashboard
-                </Button>
-                <div className="clearfix"></div>
+              <Button
+                className="btn-fill pull-right"
+                variant="info"
+                onClick={() => {
+                  history.push("/admin/landingPage");
+                }}
+              >
+                Go To Dashboard
+              </Button>
+              <div className="clearfix"></div>
             </Card.Body>
           </Card>
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};

@@ -34,8 +34,7 @@ import ScanYouaddress from "views/ScanYouaddress";
 import Imagecapture from "views/Imagecapture";
 import { UserDetails } from "views/UserDetails";
 import { EmploymentFinancialDetails } from "views/EmploymentFinancialDetails";
-import { Fatca } from "views/Fatca";
-import { RelativeOfABC } from "views/RelativeOfABC";
+
 import { LoanDetails } from "views/LoanDetails";
 import LoanAgreement from "views/LoanAgreement";
 import { WelcomeToABC } from "views/WelcomeToABC";
@@ -56,56 +55,56 @@ const dashboardRoutes = [
     name: "Landing Page",
     icon: "nc-icon nc-bank",
     component: LandingPage,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/acountType",
     name: "Account Type",
     icon: "nc-icon nc-chart-pie-35",
     component: AcountType,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/userverification",
     name: "User Verification",
     icon: "nc-icon nc-circle-09",
     component: UserVerification,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/otpverification",
     name: "Otp Verification",
     icon: "nc-icon nc-circle-09",
     component: OtpVerification,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/terms&conditions",
     name: "Terms & Conditions",
     icon: "nc-icon nc-notes",
     component: TermsConditions,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/documentation",
     name: "Documentation",
     icon: "nc-icon nc-paper-2",
     component: Documentation,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/scanyouid",
     name: "Scan Your ID",
     icon: "nc-icon nc-atom",
     component: ScanYouId,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/scanyourid",
     name: "Scan Pan Card",
     icon: "nc-icon nc-atom",
     component: ScanYourID,
-    layout: "/admin"
+    layout: "/admin",
   },
 
   {
@@ -113,28 +112,28 @@ const dashboardRoutes = [
     name: "Scan Your Address",
     icon: "nc-icon nc-circle-09",
     component: ScanYouaddress,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/scanaddress",
     name: "Scan Address",
     icon: "nc-icon nc-circle-09",
     component: ScanAddress,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/imagedocumentation",
     name: "Image Document",
     icon: "nc-icon nc-notes",
     component: imageCaptureDocumentation,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/imagecapture",
     name: "Capture Image",
     icon: "nc-icon nc-notes",
     component: Imagecapture,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/user",
@@ -148,49 +147,39 @@ const dashboardRoutes = [
     name: "Table List",
     icon: "nc-icon nc-notes",
     component: TableList,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/typography",
     name: "Typography",
     icon: "nc-icon nc-paper-2",
     component: Typography,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/icons",
     name: "Icons",
     icon: "nc-icon nc-atom",
     component: Icons,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/maps",
     name: "Maps",
     icon: "nc-icon nc-pin-3",
     component: Maps,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/notifications",
     name: "Notifications",
     icon: "nc-icon nc-bell-55",
     component: Notifications,
-    layout: "/admin"
+    layout: "/admin",
   },
   {
     path: "/employmentFinancialDetails",
     component: EmploymentFinancialDetails,
-    layout: "/admin",
-  },
-  {
-    path: "/fatca",
-    component: Fatca,
-    layout: "/admin",
-  },
-  {
-    path: "/relativeOfAbc",
-    component: RelativeOfABC,
     layout: "/admin",
   },
   {
@@ -202,20 +191,19 @@ const dashboardRoutes = [
   { path: "/welcome", component: WelcomeToABC, layout: "/admin" },
   { path: "/setPassword", component: SetPassword, layout: "/admin" },
   { path: "/login", component: Login, layout: "/admin" },
-    {
+  {
     upgrade: true,
     path: "/upgrade",
     name: "Upgrade to PRO",
     icon: "nc-icon nc-alien-33",
     component: Upgrade,
-    layout: "/admin"
+    layout: "/admin",
   },
-  {path:"/loanAvailment",component:LoanAvailment,layout:"/admin"},
-  {path:"/loanSummary",component:LoanSummary,layout:"/admin"},
-  {path:"/forgotPassword",component:ForgotPassword,layout:"/admin"},
-  {path:"/authentication",component:Authentication,layout:"/admin"},
-  {path:"/congratulations",component:Congratulation,layout:"/admin"},
-  
+  { path: "/loanAvailment", component: LoanAvailment, layout: "/admin" },
+  { path: "/loanSummary", component: LoanSummary, layout: "/admin" },
+  { path: "/forgotPassword", component: ForgotPassword, layout: "/admin" },
+  { path: "/authentication", component: Authentication, layout: "/admin" },
+  { path: "/congratulations", component: Congratulation, layout: "/admin" },
 ];
 
 export default dashboardRoutes;

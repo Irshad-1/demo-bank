@@ -32,34 +32,36 @@ const LoanAgreement = () => {
                   <ol>
                     <li>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Nam et dolor tempor, ornare felis sit amet, ultricies
-                        ligula. ras feugiat mi at arcu consectetur, tincidunt
-                        facilisis neque auctor. Cras et euismod quam. Fusce at
-                        lacus eget tellus efficitur convallis.{" "}
+                        A Loan Agreement, also known as a term loan, demand
+                        loan, or a loan contract, is a contract that documents a
+                        financial agreement between two parties, where one is
+                        the lender and the other is the borrower.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Nulla eget placerat lacus. Interdum et malesuada fames
-                        ac ante ipsum primis in faucibus. Curabitur et placerat
-                        dolor. Nam sodales neque sed eros sodales lobortis. Ut
-                        vehicula nulla nec lectus bibendum volutpat. Nam porta
-                        ultricies.
+                        This contract specifies the amount of the loan, any
+                        interest charges, the repayment plan, and payment dates.
+                        A written contract gives both the borrower and lender a
+                        clear outline of the terms of the loan.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Donec nisi massa, efficitur et felis quis, aliquet
-                        luctus sapien. Praesent in ligula nec metus condimentum
-                        feugiat nec eu purus. Orci varius natoque penatibus et
-                        magnis dis parturient montes, nascetur ridiculus mus.
+                        If the borrower dies before paying off the loan,
+                        authorities will use their assets to pay the remainder
+                        of the debt.If there is a co-signer, the responsibility
+                        for the debt falls to them.
                       </p>
                     </li>
                     <li>
                       <p>
-                        Maecenas ornare, dui et dictum fermentum, purus ex
-                        conseq uat elit, eget iaculis felis sem pharetra diam.
+                        The borrower may secure the loan with collateral such as
+                        a vehicle, equipment, or jewellery. In this case, the
+                        lender may seize the collateral if the borrower cannot
+                        repay the full loan amount. The lender may also require
+                        the borrower to obtain insurance if using the loan to
+                        buy a vehicle.
                       </p>
                     </li>
                   </ol>

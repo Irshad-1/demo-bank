@@ -44,10 +44,7 @@ export const EmploymentFinancialDetails = () => {
                       <label>Monthly Income</label>
                       <InputGroup className="mb-3">
                         <InputGroup.Text>&#8377;</InputGroup.Text>
-                        <Form.Control
-                          defaultValue="2,259.00"
-                          placeholder="Enter Monthly Income"
-                        />
+                        <Form.Control placeholder="Enter Monthly Income" />
                       </InputGroup>
                     </Form.Group>
                   </Col>
@@ -102,7 +99,6 @@ export const EmploymentFinancialDetails = () => {
                     <Form.Group>
                       <label>Employer Name</label>
                       <Form.Control
-                        defaultValue="Puma"
                         placeholder="Enter Employer Name"
                         type="text"
                       ></Form.Control>
@@ -112,7 +108,6 @@ export const EmploymentFinancialDetails = () => {
                     <Form.Group>
                       <label>Employer Address</label>
                       <Form.Control
-                        defaultValue="100 C. R. Avenue"
                         placeholder="Enter Employer Address"
                         type="text"
                       ></Form.Control>
@@ -147,7 +142,7 @@ export const EmploymentFinancialDetails = () => {
             variant="success"
             className="btn-fill pull-right"
             onClick={() => {
-              history.push("/admin/fatca");
+              history.push("/admin/loanDetails");
             }}
           >
             Confirm & Continue

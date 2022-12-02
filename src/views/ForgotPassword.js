@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   Badge,
   Button,
@@ -8,7 +8,7 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
@@ -23,36 +23,31 @@ export const ForgotPassword = () => {
             <Card.Header>
               <Card.Title as="h4">Forgot Password</Card.Title>
               <img
-                      alt="intimage"
-                  
-                      src={require("../assets/img/Mobilenumber.jpg")}
-                    />
+                alt="intimage"
+                src={require("../assets/img/Mobilenumber.jpg")}
+              />
             </Card.Header>
             <Card.Body>
               <Form>
                 <Row>
-                
-                    <h5 className="text-success">&nbsp;&nbsp;&nbsp;Enter your registered 
-mobile number</h5>
-                    
+                  <h5 className="text-success">
+                    &nbsp;&nbsp;&nbsp;Enter your registered mobile number
+                  </h5>
+
                   <Col className="pl-1" md="12">
                     <Form.Group>
-                      <label htmlFor="exampleInputEmail1">
-                       Mobile Number
-                      </label>
+                      <label htmlFor="exampleInputEmail1">Mobile Number</label>
                       <Form.Control
                         placeholder="Enter Mobile Number"
                         type="number"
-                        defaultValue="9331982298"
                       ></Form.Control>
                     </Form.Group>
                   </Col>
                 </Row>
-           
-              {/* <br></br>
+
+                {/* <br></br>
               <br></br> */}
-              
-                
+
                 <Button
                   className="btn-fill pull-right"
                   variant="info"
@@ -69,5 +64,5 @@ mobile number</h5>
         </Col>
       </Row>
     </Container>
-  )
-}
+  );
+};

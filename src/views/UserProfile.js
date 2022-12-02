@@ -10,7 +10,7 @@ import {
   Nav,
   Container,
   Row,
-  Col
+  Col,
 } from "react-bootstrap";
 
 function User() {
@@ -30,7 +30,6 @@ function User() {
                       <Form.Group>
                         <label>Company (disabled)</label>
                         <Form.Control
-                          defaultValue="Creative Code Inc."
                           disabled
                           placeholder="Company"
                           type="text"
@@ -41,7 +40,6 @@ function User() {
                       <Form.Group>
                         <label>Username</label>
                         <Form.Control
-                          defaultValue="michael23"
                           placeholder="Username"
                           type="text"
                         ></Form.Control>
@@ -64,7 +62,6 @@ function User() {
                       <Form.Group>
                         <label>First Name</label>
                         <Form.Control
-                          defaultValue="Mike"
                           placeholder="Company"
                           type="text"
                         ></Form.Control>
@@ -74,7 +71,6 @@ function User() {
                       <Form.Group>
                         <label>Last Name</label>
                         <Form.Control
-                          defaultValue="Andrew"
                           placeholder="Last Name"
                           type="text"
                         ></Form.Control>
@@ -86,7 +82,6 @@ function User() {
                       <Form.Group>
                         <label>Address</label>
                         <Form.Control
-                          defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                           placeholder="Home Address"
                           type="text"
                         ></Form.Control>
@@ -98,7 +93,6 @@ function User() {
                       <Form.Group>
                         <label>City</label>
                         <Form.Control
-                          defaultValue="Mike"
                           placeholder="City"
                           type="text"
                         ></Form.Control>
@@ -108,7 +102,6 @@ function User() {
                       <Form.Group>
                         <label>Country</label>
                         <Form.Control
-                          defaultValue="Andrew"
                           placeholder="Country"
                           type="text"
                         ></Form.Control>
@@ -130,8 +123,6 @@ function User() {
                         <label>About Me</label>
                         <Form.Control
                           cols="80"
-                          defaultValue="Lamborghini Mercy, Your chick she so thirsty, I'm in
-                          that two seat Lambo."
                           placeholder="Here can be your description"
                           rows="4"
                           as="textarea"
@@ -159,7 +150,7 @@ function User() {
                   src={require("assets/img/photo-1431578500526-4d9613015464.jpeg")}
                 ></img>
               </div> */}
-              {/* <Card.Body>
+          {/* <Card.Body>
                 <div className="author">
                   <a href="#pablo" onClick={(e) => e.preventDefault()}>
                     <img
@@ -177,8 +168,8 @@ function User() {
                   I'm in that two seat Lambo"
                 </p>
               </Card.Body> */}
-              <hr></hr>
-              {/* <div className="button-container mr-auto ml-auto">
+          <hr></hr>
+          {/* <div className="button-container mr-auto ml-auto">
                 <Button
                   className="btn-simple btn-icon"
                   href="#pablo"
@@ -204,8 +195,8 @@ function User() {
                   <i className="fab fa-google-plus-square"></i>
                 </Button>
               </div> */}
-            {/* </Card>
-          </Col> */} 
+          {/* </Card>
+          </Col> */}
         </Row>
       </Container>
     </>

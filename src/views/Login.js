@@ -13,7 +13,6 @@ import {
 } from "react-bootstrap";
 import { useHistory } from "react-router-dom";
 
-
 export const Login = () => {
   const history = useHistory();
 
@@ -55,10 +54,7 @@ export const Login = () => {
                     <label>Mobile Number</label>
                     <InputGroup className="mb-3">
                       <InputGroup.Text>+91</InputGroup.Text>
-                      <Form.Control
-                        defaultValue="9331982298"
-                        placeholder="Enter Mobile Number"
-                      />
+                      <Form.Control placeholder="Enter Mobile Number" />
                     </InputGroup>
                   </Form.Group>
                 </Col>
@@ -69,7 +65,6 @@ export const Login = () => {
                     <label>Password</label>
                     <InputGroup>
                       <Form.Control
-                        defaultValue="demo@gmail.com"
                         placeholder="Enter Email ID"
                         type={showPassword ? "text" : "password"}
                       ></Form.Control>
@@ -87,9 +82,8 @@ export const Login = () => {
                         display: "block",
                         color: "#577B63",
                         margin: "15px",
-                        cursor:"pointer"
+                        cursor: "pointer",
                       }}
-                      
                       onClick={() => {
                         history.push("/admin/forgotPassword");
                       }}

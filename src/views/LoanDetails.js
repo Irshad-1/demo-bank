@@ -110,8 +110,9 @@ export const LoanDetails = () => {
                 </ListGroup.Item>
               </ListGroup>
               <Card.Text>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam et
-                dolor tempor, ornare felis sit amet.
+                Customers can check the status of their personal loan
+                application by themselves and get a better understanding of when
+                to expect the money
               </Card.Text>
             </Card.Body>
           </Card>

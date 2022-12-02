@@ -36,7 +36,6 @@ const SetPassword = () => {
                         <label htmlFor="exampleInputEmail1">Password</label>
                         <Form.Control
                           placeholder="Enter Password"
-                          defaultValue="abcd1234"
                           type="password"
                         ></Form.Control>
                       </Form.Group>
@@ -48,7 +47,6 @@ const SetPassword = () => {
                         </label>
                         <Form.Control
                           placeholder="Enter Confirm Password"
-                          defaultValue="abcd1234"
                           type="text"
                         ></Form.Control>
                       </Form.Group>
